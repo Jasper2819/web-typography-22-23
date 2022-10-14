@@ -14,9 +14,23 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 @keyframes tilt-shaking {
 	0% 		{ transform: rotate(0deg); }
 	25% 	{ transform: rotate(10deg); }
-	50% 	{ transform: rotate(0eg); }
+	50% 	{ transform: rotate(0deg); }
 	75% 	{ transform: rotate(-10deg); }
 	100% 	{ transform: rotate(0deg); }
+}
+
+@keyframes heavy-shaking {
+	0% 		{ transform: rotate(0deg); }
+	10% 	{ transform: rotate(2deg); }
+	20% 	{ transform: rotate(0deg); }
+	30%		{ transform: rotate(4deg); }
+	40%		{ transform: rotate(0deg); }
+	50%		{ transform: rotate(6deg); }
+	60%		{ transform: rotate(0deg); }
+	70%		{ transform: rotate(8deg); }
+	80%		{ transform: rotate(0deg); }
+	90%		{ transform: rotate(10deg); }
+	100%	{ transform: rotate(0deg); }
 }
 
 @keyframes siren {
@@ -28,8 +42,26 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	100%	{box-shadow: 0px 0px 600px 50px black; }
 }
 
+@keyframes irritatie {
+	0%		{box-shadow: 0px 0px 600px 20px whitesmoke; }
+	10%		{box-shadow: 0px 0px 600px 50px whitesmoke; }
+	20%		{box-shadow: 0px 0px 600px 70px whitesmoke; }
+	30%		{box-shadow: 0px 0px 600px 10px whitesmoke; }
+	40%		{box-shadow: 0px 0px 600px 12px whitesmoke; }
+	50%		{box-shadow: 0px 0px 600px 14px whitesmoke; }
+	60%		{box-shadow: 0px 0px 600px 16px whitesmoke; }
+	70%		{box-shadow: 0px 0px 600px 19px whitesmoke; }
+	80%		{box-shadow: 0px 0px 600px 22px whitesmoke; }
+	90%		{box-shadow: 0px 0px 600px 25px whitesmoke; }
+	100%	{box-shadow: 0px 0px 600px 28px whitesmoke; }
 
+}
 
+@keyframes irri {
+	from { box-shadow: 0px 0px 60px 50px white;}
+
+	to {box-shadow: 0px 0px 600px 50px white;}
+}
 
 
 /* HIERONDER ALLES VOOR DE BASICS (TRANSITIES, CAPTIONS AAN/UIT, VOICE 1 EN 2 */
@@ -214,10 +246,6 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 /* Met .sound kan je spelen om bij bepaalde geluiden iets te laten gebeuren */
 
-.sound1 {
-	
-}
-
 
 /* *SOUND OPTIONS VOOR ELKE GELUID MOGELIJK IN DE FILM* */
 .sound1 #video-mask {
@@ -227,10 +255,6 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	
 }
 	
-
-.sound2 {
-
-}
 
 .sound2 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
@@ -245,7 +269,7 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 .sound4 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
-	animation: tilt-shaking .1s;
+	animation: heavy-shaking .8s;
 	
 	
 }
@@ -254,6 +278,39 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	box-shadow: none;
 	animation: none;
 } 
+
+/* ** Sound 6 komt na Facking skin job */
+.sound6 #video-mask {
+	box-shadow: 0px 0px 50px 100px white;
+	animation: heavy-shaking .7s;
+}
+
+.sound7 #video-mask {
+	box-shadow: 0px 0px 50px 100px white;
+	animation: heavy-shaking .7s;
+}
+
+.sound8 #video-mask {
+	box-shadow: 0px 0px 50px 100px white;
+	animation: heavy-shaking .7s;
+	box-shadow: none;
+	animation: none;
+}
+
+/* ** Op: "have you ever been in an institution" wordt deze sound geactiveerd */
+.sound9 #video-mask {
+	animation-name: irritatie;
+	animation-duration: 40s;
+	animation-direction: reverse;
+	animation-timing-function: cubic-bezier(.1, .67, .75, .97);
+}
+
+/* ** Sound 10 begint zodra het 2e deel van de video start */
+.sound10 {
+	background-color: hotpink;
+}
+
+
 
 
 /* **********************************************
