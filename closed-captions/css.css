@@ -60,8 +60,19 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	100% {
 	  opacity:0;
 	}
-  }
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 /* HIERONDER ALLES VOOR DE BASICS (TRANSITIES, CAPTIONS AAN/UIT, VOICE 1 EN 2 */
 
@@ -72,8 +83,9 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	bottom: 0em;
 	left: 1em;
 	right: 1em;
-	font-size: 1.5em;
+	
 	color: #CD7E2E;
+	-webkit-text-stroke: 1px black;
 	
 	
 }
@@ -94,6 +106,8 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	font-family: "brenner slab";
 	font-weight: bold;
 	color:#CD7E2E;
+	font-size: 1.5em;
+
 	
 	
 }
@@ -101,6 +115,8 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	font-family: "brenner sans";
 	font-style: italic;
 	color:#CD7E2E;
+	font-size: 1.8em;
+	
 	
 }
 
@@ -234,17 +250,41 @@ You probably want to change the styling.
 .p6.on span:nth-of-type(3) {
 	animation: fadeOut ease 6s;
 	font-weight: bold;
-	
 }
 
 .p42 span {
-	font-size: larger;
+	font-size: 1.3em
 }
 
 .p43 span {
-	font-size: xx-large;
+	font-size: 1.5em;
 }
 
+.p44 span {
+	font-family: "brenner slab";
+	font-weight: bold;
+	color:#CD7E2E;
+	font-size: 1.5em;
+}
+
+.p52 span:nth-of-type(14) {
+	border: solid;
+	border-color: #CD7E2E;
+}
+
+.p54 span:nth-of-type(12) {
+	font-family: "brenner script";
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+.p67 span {
+	text-shadow: 10px 10px 10px 10px black;
+}
+
+.p68 span:first-of-type {
+	text-shadow: 1px 1px 100px black;
+}
 
 /* **********************************************
 Sounds.
@@ -311,7 +351,7 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 /* ** Op: "have you ever been in an institution" wordt deze sound geactiveerd */
 .sound9 {
 	animation: pulse .5 infinite;
-	/* animation-duration: 40s; */
+	animation-duration: 40s;
 	animation-timing-function: cubic-bezier(.55,.24,.92,.65);
 	
 }
@@ -323,6 +363,21 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation-duration: 40s;
 	animation: linear;
 } */
+
+
+.sound10 {
+	background: linear-gradient(-45deg, #a1550a93, black, #a1560a, black);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+	height: 100vh;
+	
+}
+
+.sound11 #video-mask {
+	animation: none;
+	background:none;
+	background-color: black;
+}
 
 /* ** Sound 10 begint zodra het 2e deel van de video start */
 
@@ -394,10 +449,4 @@ iframe {
 
 
 
-/* ******************************************************************************* */
-/* ********* TWEEDE ONDERDEEL VAN DE VIDEO START HIERONDER *********************** */
 
-/* ** Sound 10 begint zodra het 2e deel van de video start */
-.sound10 {
-	background-color: hotpink;
-}
