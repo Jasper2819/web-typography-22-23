@@ -1,83 +1,36 @@
-# Web Typography, 2020/2021
+# Sounds for the Deaf
 
-Als je doof bent, of als je om een andere reden geen geluid kunt horen, dan mis je veel informatie als je een film kijkt. Knisperende voetstappen, langzaam aanzwellende muziek, nerveus getik op een deur, je hoort het natuurlijk allemaal niet. Nu bestaat er zoiets als *closed caption*, wat een type ondertiteling is waarbij ook dingen als omgevingsgeluiden en de muziek beschreven worden. Hierdoor krijgt een kijker die informatie wel binnen.
+## Introduction
 
-Alleen wordt die auditieve informatie nogal neutraal beschreven. Het geluid van huilend persoon zou bijvoorbeeld beschreven kunnen worden als *snikgeluid op de achtergrond*. En iemand die lacht zou geschreven kunnen worden als *iemand lacht.* Heel neutraal, bijna zakelijk, en bovendien allebei in precies hetzelfde neutrale lettertype. Terwijl het toch echt over twee heel verschillende emoties gaat. 
+For us, a movie can be an incredible experience. Watching everything happen on the big screen with all kinds of sound effects and beautiful dialog.
+But for people who can't hear a thing, it can be really difficult to understand everything happening on
+the screen. There are solutions to this, like simple subtitles, but this can be very boring.
+It is up to us students of the minor *Visual Interface Design* to put some extra magic to the simple subtitles.
 
-Dat kan visueel sterker. 
+In this ReadMe file, you will find:
 
-En dat gaan jullie doen.
+* Research that is done
+* Typography
+* Nuances
+* Different feedback from the teacher and other students
+* My opinion on this subject
+* Sources used
 
-## Leerdoelen
+## The research for this project
 
-- Je kan de kennis over vormgeving die je hebt opgedaan tijdens de minor technisch toepassen met behulp van CSS
-- Je kan verborgen nuance uit een audiotrack overtuigend vertalen naar visuele (typografische) beelden
-- Je kan je typografische keuzes onderbouwen.
-- Je hebt de exclusive design principles gebruikt.
+At first I did some research to what is needed for deaf people to get the right feeling from a movie. I searched some documents conserning the rules and guidelines used for this kind of things. In order to make something unique, I wanted to do something that has not been done before. So looking at the guidelines, I could get an image of what to "ignore", deviate from what is convenient.
 
-## Oplevering
+### Basic rules
 
-Je levert een werkende versie op, gemaakt met HTML, CSS en JavaScript. Deze staat op Github. In een duidelijke readme documenteer en onderbouw je je ontwerpkeuzes. Je developmentgeschiedenis is terug te vinden op GitHub.
+One of the things found was that there is a correct *read speed*, a maximum of 2 lines per subtitle and every line can only have 40 characters. Next is the minimum duration of a subtitle (1 second) and the maximum duration (6 seconds).
 
-Je levert ook een *screen recording* met audio op van je fragment. Dit is een video van de definitieve versie, gemaakt van jouw browserscherm.
+### Colors
 
-De beoordeling is mondeling en volgt [de rubric uit het beoordelingsformulier](web-typografie-beoordeling.pdf).
+(!!!!!!!!!!!!!!!!!!!!!!)
 
-## Typografische restricties
+## Typography
 
-Je *moet* een van deze twee opties kiezen, en je keuze moet je onderbouwen. In je readme staat een uitleg over je overwegingen om de ene of de andere restrictie te kiezen.
+The typography that is used for my subtitles comes from the *Brenner* family. I could have chosen a different font, but the Brenner font gives a lot of different styles to try out and see wich is best for wich voice. In the first part of the video, I use *Brenner slab* for 'voice 1'. This is because in this fragment, the one who is asking the questions sounds like a boss, a leader who decides what happens to the different people he chats with. That's why I chose to give him a strong, bold style of text. This way a deaf person will know that 'voice 1' is in charge and decides wheter *agent K* will get his bonus or not.
+For *agent K* I've chosen to give him a skinnier, weaker text style. The agent is the one that's being questioned. The agent is the one they put in a white room with no chance to do anything but sit there. So he has to be obedient to his boss (or the one queestioning him). To make the text submissive, I made is skinnier than 'voice 1' and made is italic to make the difference between the two speaking voices clearer.
 
-### Optie 1: Systeemfont
-
-De eerste optie is dat je gebruik maakt van het zogenaamde *systeemfont* van degene die naar jouw werk kijkt. Dit font verschilt per operating system, en het verschilt soms zelfs per versie van het operating system. Het is ook aan te passen door de gebruiker zelf. 
-
-Je hebt dus geen controle over welk lettertype er precies gebruikt wordt. Het levert dus een onzeker, en beperkt typografisch palet op. Je hebt geen *light* versies, of *extrabold*. En ook geen serif en sans-serif versie van dezelfde familie. In dit geval heb je alleen de beschikking over normal, **bold** en _italic_. Dit heeft natuurlijk ook zijn voordelen!
-
-### Optie 2: Brenner
-
-Je kan er ook voor kiezen om gebruik te maken van de complete Brenner familie. Dit is een zeer uitgebreid en uiterst flexibel font. [Hier kan je je verdiepen in dit font](https://www.typotheque.com/blog/brenner_an_unusual_typeface_family_with_distinct_voices). Als je kiest voor dit font dan heb je de beschikking over een *sans serif*, een *condensed*, een *serif*, een *monotype*, een *slab*, een *display* en een *script* versie. En veel van deze versies hebben varianten van *light* tot *bold*, en allemaal zowel *bold* als *italic*.
-
-Met Brenner zijn er natuurlijk veel en veel meer mogelijkheden dan met systeemfonts. Dat kan zowel een voordeel als een nadeel zijn. 
-
-Voor een overzicht, zie [de brenner.pdf](brenner.pdf).
-
-## Het fragment
-
-Ik heb een fragment voorbereid. Het gaat om twee scenes uit *Blade Runner 2049*. De captions staan in de HTML, en ze verschijnen in sync met de video. [Kijk maar](closed-captions/index.html).
-
-### De captions
-
-De captions staan in de html, in het bestand index.html. Je kan aan elke paragraaf eventueel een of meer classes toevoegen. Bijvoorbeeld `voice1` of `voice2 soft`. Classes voeg je handmatig toe in de html.
-
-Met JavaScript worden er een paar dingen extra gedaan: 
-
-- er wordt aan elke paragraaf een unieke class toegevoegd (`p0`, `p1`, etc)
-- Elk woord wordt in een aparte `span` gezet. Hierdoor kan je elk woord apart stylen, en eventueel ook [na elkaar laten verschijnen](https://github.com/cmda-minor-vid/web-typography-18-19/blob/master/closed-captions/css.css#L41).
-
-### Tijdens het afspelen
-
-Tijdens het afspeelen wordt er een class `on` op de caption gezet als hij moet verschijnen, en een class `off` als hij klaar is. *Zowel class `on` als class `off` blijft op de caption staan!*
-
-De timimg van de captions kan je aanpassen in [closed-captions/captions.js](closed-captions/captions.js).
-
-Er verschijnen ook classes op de body op momenten dat er geluiden worden afgespeeld, zoals `sound1` en `sound2`. Je kan geluiden toevoegen in [closed-captions/sounds.js](closed-captions/sounds.js).
-
-*let op,* de geluiden zijn niet compleet, dit zal je zelf moeten aanvullen.
-
-## Een eigen fragment (afgeraden, uitgebreide onderbouwing is nodig)
-
-Je kan er ook voor kiezen om een eigen, *beter* fragment te gebruiken. Dit wordt afgeraden. De tijd die je besteedt aan het zoeken naar dat fragment kan je beter besteden aan het werken aan de opdracht. Bovendien blijkt dat er vaak fragmenten worden gekozen die niet goed voldoen aan de opdracht. Als je een ander fragment kiest dan *moet* je dit goed onderbouwd voorleggen aan je docent. De deadline hiervoor is vrijdagochtend in de eerste week.
-
-### Waar moet je op letten bij het kiezen van een eigen fragment.
-Lees de opdracht nog eens goed door. Waar gaat het ook al weer precies om? 
-
-Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vragen in elk geval beantwoorden:
-
-- Welke informatie zit er in de audio die echt niet zichtbaar is?
-- Welke rol speelt de audio in het fragment?
-- Werkt de scene nog zonder geluid?
-- Waarom is dit fragment beter dan het aangeboden fragment?
-
-Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
-
-Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
+So, 'voice 1' who asks all the questions in the first fragment of the video gets *Brenner slab*, and the agent gets *Brenner sans*. 
