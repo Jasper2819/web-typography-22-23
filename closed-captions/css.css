@@ -29,8 +29,9 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	60%		{ transform: rotate(0deg); }
 	70%		{ transform: rotate(8deg); }
 	80%		{ transform: rotate(0deg); }
-	90%		{ transform: rotate(10deg); }
+	90%		{ transform: rotate(10deg);}
 	100%	{ transform: rotate(0deg); }
+	
 }
 
 @keyframes siren {
@@ -43,25 +44,23 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 }
 
 @keyframes irritatie {
-	0%		{box-shadow: 0px 0px 600px 20px whitesmoke; }
-	10%		{box-shadow: 0px 0px 600px 50px whitesmoke; }
-	20%		{box-shadow: 0px 0px 600px 70px whitesmoke; }
-	30%		{box-shadow: 0px 0px 600px 10px whitesmoke; }
-	40%		{box-shadow: 0px 0px 600px 12px whitesmoke; }
-	50%		{box-shadow: 0px 0px 600px 14px whitesmoke; }
-	60%		{box-shadow: 0px 0px 600px 16px whitesmoke; }
-	70%		{box-shadow: 0px 0px 600px 19px whitesmoke; }
-	80%		{box-shadow: 0px 0px 600px 22px whitesmoke; }
-	90%		{box-shadow: 0px 0px 600px 25px whitesmoke; }
-	100%	{box-shadow: 0px 0px 600px 28px whitesmoke; }
+	0%		{background-color: black; }
+	100%	{background-color: whitesmoke; }
 
 }
 
-@keyframes irri {
-	from { box-shadow: 0px 0px 60px 50px white;}
-
-	to {box-shadow: 0px 0px 600px 50px white;}
+@keyframes border-animation {
+	0%	{border: solid black; }
 }
+
+@keyframes fadeOut {
+	0% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
 
 
 /* HIERONDER ALLES VOOR DE BASICS (TRANSITIES, CAPTIONS AAN/UIT, VOICE 1 EN 2 */
@@ -71,10 +70,12 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	transition: .05s;
 	position: absolute;
 	bottom: 0em;
-	color: white;
 	left: 1em;
 	right: 1em;
 	font-size: 1.5em;
+	color: #CD7E2E;
+	
+	
 }
 
 /* Closed-captions on is voor wanneer de tekst moet verschijnen */
@@ -87,14 +88,19 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	transition: .1s;			
 	opacity: 0;
 }
+
+
 .voice1 {
 	font-family: "brenner slab";
 	font-weight: bold;
+	color:#CD7E2E;
+	
+	
 }
 .voice2 {
 	font-family: "brenner sans";
-	font-weight: lighter;
 	font-style: italic;
+	color:#CD7E2E;
 	
 }
 
@@ -187,6 +193,7 @@ You probably want to change the styling.
 
 .p1.on span:nth-of-type(3) {
 	font-style: normal;
+	text-shadow: none;
 }
 
 /* ********************************** */
@@ -200,41 +207,43 @@ You probably want to change the styling.
 
 /* ** 5e zin ** */
 .p6 span {
-	opacity: 0;
 	font-family: "brenner slab";
-	font-weight: bold;
-}
- .p6.on span {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 400;
+	font-style: italic;
 }
 
- .p6.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	/* Fuck */
+.p6 span:nth-of-type(1) {
+	font-weight: bold
+}
+
+.p6 span:nth-of-type(2) {
+	font-weight: bold
+}
+
+.p6 span:nth-of-type(3) {
+	font-weight: lighter;
+}
+
+.p6.on span:nth-of-type(1) {
+	animation: fadeOut ease 6s;
 }
 
 .p6.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s;
-	/* Off  */
+	animation: fadeOut ease 6s;
 }
+
 .p6.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
+	animation: fadeOut ease 6s;
+	font-weight: bold;
 	
-	/* Skin-job */
-}
-/* ***************************************** */
-
-#closed-captions .p6.off span:nth-of-type(3) {
-	transition: 1s;			
-	opacity: 0;
 }
 
+.p42 span {
+	font-size: larger;
+}
 
+.p43 span {
+	font-size: xx-large;
+}
 
 
 /* **********************************************
@@ -248,14 +257,13 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 
 /* *SOUND OPTIONS VOOR ELKE GELUID MOGELIJK IN DE FILM* */
+
 .sound1 #video-mask {
 	
 	/* box-shadow: 0px 0 50px 100px rgba(204, 16, 16); */
 	animation: siren 2s;
-	
 }
 	
-
 .sound2 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
 	animation: tilt-shaking .1s;
@@ -266,12 +274,9 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 }
 
-
 .sound4 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
 	animation: heavy-shaking .8s;
-	
-	
 }
 
 .sound5 #video-mask {
@@ -297,20 +302,29 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 }
 
+
+@keyframes pulse {
+	0%, 100%  	{background-color: black;}
+	66% 		{background-color: white;}
+
+}
 /* ** Op: "have you ever been in an institution" wordt deze sound geactiveerd */
-.sound9 #video-mask {
+.sound9 {
+	animation: pulse .5 infinite;
+	/* animation-duration: 40s; */
+	animation-timing-function: cubic-bezier(.55,.24,.92,.65);
+	
+}
+
+/* .sound9 #video-mask {
+	border: solid;
+	border-color: white;
 	animation-name: irritatie;
 	animation-duration: 40s;
-	animation-direction: reverse;
-	animation-timing-function: cubic-bezier(.1, .67, .75, .97);
-}
+	animation: linear;
+} */
 
 /* ** Sound 10 begint zodra het 2e deel van de video start */
-.sound10 {
-	background-color: hotpink;
-}
-
-
 
 
 /* **********************************************
@@ -376,4 +390,14 @@ iframe {
 	color: red;
 	font-family: "Brenner slab";
 	
+}
+
+
+
+/* ******************************************************************************* */
+/* ********* TWEEDE ONDERDEEL VAN DE VIDEO START HIERONDER *********************** */
+
+/* ** Sound 10 begint zodra het 2e deel van de video start */
+.sound10 {
+	background-color: hotpink;
 }
