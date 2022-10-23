@@ -80,10 +80,9 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	bottom: 0em;
+	bottom: -3em;
 	left: 1em;
 	right: 1em;
-	
 	color: #CD7E2E;
 	-webkit-text-stroke: 1px black;
 	
@@ -316,7 +315,8 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 .sound4 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
-	animation: heavy-shaking .8s;
+	animation-name: heavy-shaking;
+	animation-duration: .8s;
 }
 
 .sound5 #video-mask {
