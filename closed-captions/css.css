@@ -43,11 +43,22 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	100%	{box-shadow: 0px 0px 600px 50px black; }
 }
 
-@keyframes irritatie {
-	0%		{background-color: black; }
-	100%	{background-color: whitesmoke; }
+@keyframes siren2 {
+	0%		{box-shadow: 0px 0px 600px 50px black; }
+	10%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
+	20%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
+	30%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
+	40%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
+	50%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
+	60%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
+	70%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
+	80%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
+	90%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
+	100%	{box-shadow: 0px 0px 600px 50px black; }
 
 }
+
+
 
 @keyframes border-animation {
 	0%	{border: solid black; }
@@ -137,7 +148,7 @@ You probably want to change the styling.
  .p0.on span {
 	opacity: 1;
 	transition: 0s;
-	font-weight: 400;
+	font-weight: bold;
 }
 
  .p0.on span:first-of-type {
@@ -300,7 +311,7 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 .sound1 #video-mask {
 	
 	/* box-shadow: 0px 0 50px 100px rgba(204, 16, 16); */
-	animation: siren 2s;
+	animation: siren2 2s;
 }
 	
 .sound2 #video-mask {
@@ -343,26 +354,45 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 }
 
 
-@keyframes pulse {
-	0%, 100%  	{background-color: black;}
-	66% 		{background-color: white;}
-
-}
 /* ** Op: "have you ever been in an institution" wordt deze sound geactiveerd */
-.sound9 {
+/* .sound9 {
 	animation: pulse .5 infinite;
 	animation-duration: 40s;
 	animation-timing-function: cubic-bezier(.55,.24,.92,.65);
 	
+} */
+@keyframes irritatie {
+	0%		{background-color: black; }
+	5%		{background-color: whitesmoke;}
+	10%		{background-color: black; }
+	15%		{background-color: whitesmoke;}
+	20%		{background-color: black;}
+	25%		{background-color: whitesmoke;}
+	30%		{background-color: black;}
+	35%		{background-color: whitesmoke;}
+	40%		{background-color: black;}
+	45%		{background-color: whitesmoke;}
+	50%		{background-color: black;}
+	55%		{background-color: whitesmoke;}
+	60%		{background-color: black;}
+	100%	{background-color: whitesmoke;}
 }
 
-/* .sound9 #video-mask {
-	border: solid;
-	border-color: white;
-	animation-name: irritatie;
-	animation-duration: 40s;
-	animation: linear;
-} */
+@keyframes schalen {
+	0%	{transform: scale(0.9);}
+
+	99%	{transform: scale(1.2);}
+
+	100% {transform: scale(1); }
+}
+
+
+
+.sound9 #video-mask {
+	animation-name: schalen 40s;
+	animation-timing-function: linear;
+}
+
 
 
 .sound10 {
@@ -409,7 +439,7 @@ body {
 }
 
 /* Dit is voor de content/box van de ondertiteling */
-#video-container p{
+#video-container p {
 	justify-content: center;
 }
 
