@@ -389,74 +389,172 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 }
 
+@keyframes pulse10 {
+	0%, 100%  {
+	  background-color: rgb(0, 0, 0);
+	}
+	33% {
+	  background-color: rgb(255, 255, 255);
+	}
+	
+}
 
+@keyframes pulse11 {
+	0%, 100%  {
+	  background-color: rgb(0, 0, 0);
+	}
+	33% {
+	  background-color: rgb(255, 255, 255);
+	}
+	
+}
+
+@keyframes pulse12 {
+	0%, 100%  {
+	  background-color: rgb(0, 0, 0);
+	}
+	33% {
+	  background-color: rgb(255, 255, 255);
+	}
+}
+
+@keyframes pulse13 {
+	0%, 100%  {
+	  background-color: rgb(0, 0, 0);
+	}
+	33% {
+	  background-color: rgb(255, 255, 255);
+	}
+}
+
+@keyframes pulse14 {
+	0%, 100%  {
+	  background-color: rgb(0, 0, 0);
+	}
+	33% {
+	  background-color: rgb(255, 255, 255);
+	}
+}
+
+.sound10 {
+	animation: pulse10 1s;
+	animation-iteration-count: 10;
+}
+
+.sound11 {
+	animation: pulse11 .8s;
+	animation-iteration-count: 10;
+}
+
+.sound12 {
+	animation: pulse12 .6s;
+	animation-iteration-count: 16;
+}
+
+.sound13 {
+	animation: pulse13 .3s;
+	animation-iteration-count: 30;
+}
+
+.sound14 {
+	animation: pulse14 .1s;
+	animation-iteration-count: 70;
+}
+
+
+
+
+/* ***************************************** */
+/* @keyframes irri10 {
+	0%		{background: black;}
+	25%		{background: rgb(87, 87, 87);}
+	50%		{background: black;}
+	75%		{background: rgb(87, 87, 87);}
+	100%	{background: black;}
+}
+.sound10 {
+	animation-name: irri10;
+	animation-duration: 8.2s;
+}
 
 .sound10 #video-mask {
 	animation-name: schalen ;
 	animation-duration: 41.8s;
 }
 
-/* @keyframes irritatie {
-	0%		{background: white;}
-	5% 		{background: black;}
-	10%		{background: white;}
-	15%		{background: black;}
-	20%		{background: white;}
-	24%		{background: black;}
-	28%		{background: white;}
-	32%		{background: black;}
-	35%		{background: white;}
-	38%		{background: black;}
-	41%		{background: white;}
-	43%		{background: black;}
-	45%		{background: white;}
-	47%		{background: black;}
-	49%		{background: white;}
-	52%		{background: black;}
-	53%		{background: white;}
-	54%		{background: black;}
-	55%		{background: white;}
-	56%		{background: black;}
-	57%		{background: white;}
-	58%		{background: black;}
-	59%		{background: white;}
-	60%		{background: black;}
-	61%		{background: white;}
-	62.5%	{background: black;}
-	100%	{background: white;}
-} */
-
-@keyframes irritatie {
+@keyframes irri11 {
 	0%		{background: black;}
-	50%		{background: white;}
+	16%		{background: rgb(131, 131, 131);}
+	32%		{background: black;}
+	48%		{background: rgb(131, 131, 131);}
+	64%		{background: black;}
+	80%		{background: rgb(131, 131, 131);}
 	100%	{background: black;}
-}
-.sound10  {
-	/* animation: irritatie;
-	animation-duration: .1s;
-	animation-timing-function: ease-in-out; 
-	animation-iteration-count: 422; */
 }
 
 .sound11 {
-	background-color: black;
+	animation-name: irri11;
+	animation-duration: 8.2s;
 }
 
-.sound14 {
-	background: linear-gradient(-45deg, #a1550a93, black, #a1560a, black);
-	background-size: 400% 400%;
-	animation: gradient 30s ease infinite;
-	height: 100vh;
-	
+@keyframes irri12 {
+	0%		{background: black;}
+	10%		{background: rgb(197, 197, 197);}
+	20%		{background: black;}
+	30%		{background: rgb(197, 197, 197);}
+	40%		{background: black;}
+	50%		{background: rgb(197, 197, 197);}
+	60%		{background: black;}
+	70%		{background: rgb(197, 197, 197);}
+	80%		{background: black;}
+	90%		{background: rgb(197, 197, 197);}
+	100%	{background: black;}
 }
 
-/* .sound11 #video-mask {
-	animation: none;
-	background:none;
-	background-color: black;
+.sound12 {
+	animation-name: irri12;
+	animation-duration: 8.2s;
+}
+
+
+@keyframes irri13 {
+	0%		{background: black;}
+	5%		{background: rgb(197, 197, 197);}
+	10%		{background: black;}
+	15%		{background: rgb(197, 197, 197);}
+	20%		{background: black;}
+	25%		{background: rgb(197, 197, 197);}
+	30%		{background: black;}
+	35%		{background: rgb(197, 197, 197);}
+	40%		{background: black;}
+	45%		{background: rgb(197, 197, 197);}
+	50%		{background: black;}
+	55%		{background: rgb(197, 197, 197);}
+	60%		{background: black;}
+	65%		{background: rgb(197, 197, 197);}
+	70%		{background: black;}
+	75%		{background: rgb(197, 197, 197);}
+	80%		{background: black;}
+	85%		{background: rgb(197, 197, 197);}
+	90%		{background: black;}
+	95%		{background: rgb(197, 197, 197);}
+	100%	{background: black;}
+}
+
+.sound13 {
+	animation-name: irri13;
+	animation-duration: 8.2s;
 } */
 
-/* ** Sound 10 begint zodra het 2e deel van de video start */
+
+
+
+
+
+.sound15 {
+	background-color: black;
+	animation: none;
+}
 
 
 /* **********************************************
