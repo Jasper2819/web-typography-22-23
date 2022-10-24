@@ -85,6 +85,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	}
 }
 
+
 /* HIERONDER ALLES VOOR DE BASICS (TRANSITIES, CAPTIONS AAN/UIT, VOICE 1 EN 2 */
 
 #closed-captions p {
@@ -96,6 +97,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	right: 1em;
 	color: #CD7E2E;
 	-webkit-text-stroke: 1px black;
+	
 	
 	
 }
@@ -118,15 +120,22 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	color:#CD7E2E;
 	font-size: 1.5em;
 
-	
-	
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff;
+   
+    
+    
 }
 .voice2 {
 	font-family: "brenner sans";
 	font-style: italic;
 	color:#CD7E2E;
 	font-size: 1.8em;
-	
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff;
 	
 }
 
@@ -231,10 +240,13 @@ You probably want to change the styling.
 
 /* ********************************** */
 
-/* ** 5e zin ** */
+/* ** 5e zin: fuck off skin job** */
 .p6 span {
 	font-family: "brenner slab";
 	font-style: italic;
+	position: relative;
+	bottom: 30em;
+	left: -20em;
 }
 
 .p6 span:nth-of-type(1) {
@@ -262,6 +274,7 @@ You probably want to change the styling.
 	font-weight: bold;
 }
 
+/* ********************* */
 .p42 span {
 	font-size: 1.3em
 }
@@ -342,60 +355,44 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 }
 
 .sound7 #video-mask {
-	box-shadow: 0px 0px 50px 100px white;
-	animation: heavy-shaking .7s;
+	box-shadow: none;
+	animation: none;
 }
 
 .sound8 #video-mask {
 	box-shadow: 0px 0px 50px 100px white;
 	animation: heavy-shaking .7s;
+}
+
+.sound9 #video-mask {
 	box-shadow: none;
 	animation: none;
 }
 
-
-/* ** Op: "have you ever been in an institution" wordt deze sound geactiveerd */
-/* .sound9 {
-	animation: pulse .5 infinite;
-	animation-duration: 40s;
-	animation-timing-function: cubic-bezier(.55,.24,.92,.65);
-	
-} */
-@keyframes irritatie {
-	0%		{background-color: black; }
-	5%		{background-color: whitesmoke;}
-	10%		{background-color: black; }
-	15%		{background-color: whitesmoke;}
-	20%		{background-color: black;}
-	25%		{background-color: whitesmoke;}
-	30%		{background-color: black;}
-	35%		{background-color: whitesmoke;}
-	40%		{background-color: black;}
-	45%		{background-color: whitesmoke;}
-	50%		{background-color: black;}
-	55%		{background-color: whitesmoke;}
-	60%		{background-color: black;}
-	100%	{background-color: whitesmoke;}
-}
-
 @keyframes schalen {
-	0%	{transform: scale(0.9);}
+	0%	{transform: scale(1);}
 
-	99%	{transform: scale(1.2);}
+	99%	{transform: scale(1.1);}
 
 	100% {transform: scale(1); }
 }
 
+.sound10 #video-mask {
+	animation-name: schalen ;
+	animation-duration: 41.8s;
+}
 
+.sound10  {
+	background-color: red;
+}
 
-.sound9 #video-mask {
-	animation-name: schalen 40s;
-	animation-timing-function: linear;
+.sound11 {
+	background-color: black;
 }
 
 
 
-.sound10 {
+.sound14 {
 	background: linear-gradient(-45deg, #a1550a93, black, #a1560a, black);
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
@@ -403,11 +400,11 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	
 }
 
-.sound11 #video-mask {
+/* .sound11 #video-mask {
 	animation: none;
 	background:none;
 	background-color: black;
-}
+} */
 
 /* ** Sound 10 begint zodra het 2e deel van de video start */
 
