@@ -11,14 +11,6 @@ Feel free to adjust the defaults to your needs.
 ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 ********************************************** */
 
-@keyframes tilt-shaking {
-	0% 		{ transform: rotate(0deg); }
-	25% 	{ transform: rotate(10deg); }
-	50% 	{ transform: rotate(0deg); }
-	75% 	{ transform: rotate(-10deg); }
-	100% 	{ transform: rotate(0deg); }
-}
-
 @keyframes heavy-shaking {
 	0% 		{ transform: rotate(0deg); }
 	10% 	{ transform: rotate(2deg); }
@@ -31,16 +23,6 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	80%		{ transform: rotate(0deg); }
 	90%		{ transform: rotate(10deg);}
 	100%	{ transform: rotate(0deg); }
-	
-}
-
-@keyframes siren {
-	0%		{box-shadow: 0px 0px 600px 50px black; }
-	16%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
-	33%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
-	66%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
-	83%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185); }
-	100%	{box-shadow: 0px 0px 600px 50px black; }
 }
 
 @keyframes siren2 {
@@ -55,10 +37,25 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	80%		{box-shadow: 0px 0px 600px 50px rgb(9, 9, 185);}
 	90%		{box-shadow: 0px 0px 600px 50px rgb(199, 10, 10); }
 	100%	{box-shadow: 0px 0px 600px 50px black; }
-
 }
 
+@keyframes check-ok {
+	0%	{box-shadow: 0px 0px 50px 100px rgb(175, 6, 6);}
+	50%	{box-shadow: 0px 0px 50px 100px rgb(175, 6, 6);}
+	100% {box-shadow: 0px 0px 50px 100px rgb(0, 136, 41);}
+}
 
+@keyframes zwaailicht {
+	0%		{background: linear-gradient(to right top, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	12.5%	{background: linear-gradient(to right, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	25%		{background: linear-gradient(to right bottom, #af0000, #af0000, #af0000 , #0000c0, #0000c0, #0000c0);}
+	37.5%	{background: linear-gradient(to bottom, #af0000, #af0000, #af0000, #0000c0, #0000c0, #0000c0);}
+	50%		{background: linear-gradient(to left bottom, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	62.5%	{background: linear-gradient(to left, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	75%		{background: linear-gradient(to left top, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	87.5%	{background: linear-gradient(to top, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+	100%	{background: linear-gradient(to right top, #af0000, #af0000, #af0000,  #0000c0, #0000c0, #0000c0);}
+}
 
 @keyframes border-animation {
 	0%	{border: solid black; }
@@ -85,6 +82,14 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	}
 }
 
+@keyframes schalen {
+	0%	{transform: scale(1);}
+
+	99%	{transform: scale(1.05);}
+
+	100% {transform: scale(1); }
+}
+
 
 /* HIERONDER ALLES VOOR DE BASICS (TRANSITIES, CAPTIONS AAN/UIT, VOICE 1 EN 2 */
 
@@ -97,9 +102,6 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	right: 1em;
 	color: #CD7E2E;
 	-webkit-text-stroke: 1px black;
-	
-	
-	
 }
 
 /* Closed-captions on is voor wanneer de tekst moet verschijnen */
@@ -120,23 +122,33 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	color:#CD7E2E;
 	font-size: 1.5em;
 
-	text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff;
-   
-    
-    
+	
 }
 .voice2 {
 	font-family: "brenner sans";
 	font-style: italic;
 	color:#CD7E2E;
 	font-size: 1.8em;
-	text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 15px #fff;
 	
+    
+}
+
+/* Fuck off wordt rood */
+.voice3 span {
+	font-style: italic;
+	/* opacity: 0.5; */
+	font-size: larger;
+	justify-content: right;
+		
+}
+.voice3 span:nth-of-type(1) {
+	color: red;
+	font-family: "Brenner mono";
+}
+
+.voice3 span:nth-of-type(2) {
+	color: red;
+	font-family: "Brenner slab";	
 }
 
 /* **********************************************
@@ -321,15 +333,23 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 /* *SOUND OPTIONS VOOR ELKE GELUID MOGELIJK IN DE FILM* */
 
-.sound1 #video-mask {
+/* na yes sir */
+.sound1 #video-mask { 
 	
 	/* box-shadow: 0px 0 50px 100px rgba(204, 16, 16); */
 	animation: siren2 2s;
 }
-	
+
 .sound2 #video-mask {
-	box-shadow: 0px 0px 50px 100px white;
-	animation: tilt-shaking .1s;
+	/* na recite your baseline */
+	/* box-shadow: 0px 0px 50px 100px white; */
+	animation: heavy-shaking;
+	animation-duration: .9s;
+}
+
+.sound2 {
+	animation-name: zwaailicht;
+	animation-duration: .9s;
 }
 
 .sound3 #video-mask {
@@ -338,9 +358,9 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 }
 
 .sound4 #video-mask {
-	box-shadow: 0px 0px 50px 100px white;
-	animation-name: heavy-shaking;
-	animation-duration: .8s;
+	/* box-shadow: 0px 0px 50px 100px white; */
+	animation-name: heavy-shaking, check-ok;
+	animation-duration: 1s;
 }
 
 .sound5 #video-mask {
@@ -350,8 +370,8 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 
 /* ** Sound 6 komt na Facking skin job */
 .sound6 #video-mask {
-	box-shadow: 0px 0px 50px 100px white;
-	animation: heavy-shaking .7s;
+	/* box-shadow: 0px 0px 50px 100px white; */
+	animation: heavy-shaking .9s, check-ok 2s;	
 }
 
 .sound7 #video-mask {
@@ -360,8 +380,8 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 }
 
 .sound8 #video-mask {
-	box-shadow: 0px 0px 50px 100px white;
-	animation: heavy-shaking .7s;
+	
+	animation: heavy-shaking .7s, check-ok 2s;
 }
 
 .sound9 #video-mask {
@@ -369,28 +389,58 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 }
 
-@keyframes schalen {
-	0%	{transform: scale(1);}
 
-	99%	{transform: scale(1.1);}
-
-	100% {transform: scale(1); }
-}
 
 .sound10 #video-mask {
 	animation-name: schalen ;
 	animation-duration: 41.8s;
 }
 
+/* @keyframes irritatie {
+	0%		{background: white;}
+	5% 		{background: black;}
+	10%		{background: white;}
+	15%		{background: black;}
+	20%		{background: white;}
+	24%		{background: black;}
+	28%		{background: white;}
+	32%		{background: black;}
+	35%		{background: white;}
+	38%		{background: black;}
+	41%		{background: white;}
+	43%		{background: black;}
+	45%		{background: white;}
+	47%		{background: black;}
+	49%		{background: white;}
+	52%		{background: black;}
+	53%		{background: white;}
+	54%		{background: black;}
+	55%		{background: white;}
+	56%		{background: black;}
+	57%		{background: white;}
+	58%		{background: black;}
+	59%		{background: white;}
+	60%		{background: black;}
+	61%		{background: white;}
+	62.5%	{background: black;}
+	100%	{background: white;}
+} */
+
+@keyframes irritatie {
+	0%		{background: black;}
+	50%		{background: white;}
+	100%	{background: black;}
+}
 .sound10  {
-	background-color: red;
+	/* animation: irritatie;
+	animation-duration: .1s;
+	animation-timing-function: ease-in-out; 
+	animation-iteration-count: 422; */
 }
 
 .sound11 {
 	background-color: black;
 }
-
-
 
 .sound14 {
 	background: linear-gradient(-45deg, #a1550a93, black, #a1560a, black);
@@ -455,24 +505,7 @@ iframe {
 }
 
 
-/* Fuck off wordt rood */
-.voice3 span {
-	font-style: italic;
-	/* opacity: 0.5; */
-	font-size: medium;
-	justify-content: right;
-	
-}
-.voice3 span:nth-of-type(1) {
-	color: red;
-	font-family: "Brenner mono";
-}
 
-.voice3 span:nth-of-type(2) {
-	color: red;
-	font-family: "Brenner slab";
-	
-}
 
 
 
