@@ -9,7 +9,7 @@ It is up to us students of the minor *Visual Interface Design* to put some extra
 
 In this ReadMe file, you will find:
 
-* Research that is done
+* Research for this project
 * Typography
 * Nuances
 * Different feedback from the teacher and other students
@@ -26,7 +26,7 @@ Searching on the internet I found several [rules and guidelines](https://www.rev
 
 What is being subtitled? Next to the voices of the actors, a lot of special effects are being subtitled as well. Think about and extremely huge explosion, underwater bubbles or anything relevant to know what is going on. But sounds not only make a movie spectaculair, they can also have the opposite effect. With sounds you can make a scene interesting, scary or you can build up a lot of tension. And that last one is compelling. Because in the first fragment of the video I'm working on, a high piched tone can be heard. This tone gets worse and worse when more questions follow and than suddenly... it stops. So it is important to give the same fealing to deaf people, to let them know that there is something irritating going on. For this, a simple subtitle won't be enough.
 
-Next, you don't want to make subtitles inaccurate, gibberish or butchered. It has to be relevant to the scenes it's being used to. Seeing all the rules and guidelines for subtitles, I get a pretty good idea what to do different to make subtitles more interesting. So, in the next chapters I will explain what I did and most importantly why I did it.
+Next, you don't want to make subtitles inaccurate, gibberish or butchered. It has to be relevant to the scenes it's being used to. Seeing all the rules and guidelines for subtitles, I get a pretty good idea what to do different to make a movie for deaf people more interesting. So, in the next chapters I will explain what I did and most importantly why I did it.
 
 ### Colors
 
@@ -34,11 +34,18 @@ Next, you don't want to make subtitles inaccurate, gibberish or butchered. It ha
 
 ## Typography
 
-The typography that is used for my subtitles comes from the *Brenner* family. I could have chosen a different font, but the Brenner font gives a lot of different styles to try out and see wich is best for wich voice. In the first part of the video, I use *Brenner slab* for 'voice 1'. This is because in this fragment, the one who is asking the questions sounds like a boss, a leader who decides what happens to the different people he chats with. That's why I chose to give him a strong, bold style of text. This way a deaf person will know that 'voice 1' is in charge and decides wheter *agent K* will get his bonus or not.
-For *agent K* I've chosen to give him a skinnier, weaker text style. The agent is the one that's being questioned. The agent is the one they put in a white room with no chance to do anything but sit there. So he has to be obedient to his boss (or the one queestioning him). To make the text submissive, I made is skinnier than 'voice 1' and made is italic to make the difference between the two speaking voices clearer.
+The typography that is used for my subtitles comes from the *Brenner* family. I could have chosen a different font, but the Brenner font gives a lot of different styles to try out and see wich is best for wich voice.
 
-So, 'voice 1' who asks all the questions in the first fragment of the video gets *Brenner slab*, and the agent gets *Brenner sans*. To ake the difference bigger between the two voices, I made 'voice 2' italic, so it will be easier to understand that it is in fact the other person talking.⋅⋅
-⋅⋅⋅The typography is used again in the second fragment of the entire video. Using the same typography again, the person who is wathcing will recognize this and will know wich voice is who.
+### Voice 1
+
+In the first part of the video, I use *Brenner slab* for 'voice 1'. This is because in this fragment, the one who is asking the questions sounds like a boss, a leader who decides what happens to the different people he chats with. That's why I chose to give him a strong, bold style of text. This way a deaf person will know that 'voice 1' is in charge and decides wheter *agent K* will get his bonus or not. And in the second part of the video, he is asking our main character the same questions. Here too is he the boss who asks the questions, and some words even have more emphasis.
+
+### Voice 2
+
+For *agent K* I've chosen to give him a skinnier, weaker text style. The agent is the one that's being questioned. The agent is the one they put in a white room with no chance to do anything but sit there. So he has to be obedient to his boss (or the one questioning him). To make the text submissive, I made is skinnier than 'voice 1' and made is italic to make the difference between the two speaking voices clearer.
+
+So, 'voice 1' who asks all the questions in the first fragment of the video gets *Brenner slab*, and the agent gets *Brenner sans*. To make the difference bigger between the two voices, I made 'voice 2' italic, so it will be easier to understand that it is in fact the other person talking.
+The typography is used again in the second fragment of the entire video. Using the same typography again, the person who is wathcing will recognize this and will know wich voice is who.
 
 ## Nuances
 
