@@ -1,5 +1,14 @@
 # Sounds for the Deaf
 
+* Author: Jasper Riepe
+* Student code: 500821485
+* Amsterdam University of Applied Sciences
+* project finished: 26th of october 2022
+
+Copying and sharing this document is not allowed. Contact the author if you want to use any information found within this readme or code files.
+
+---
+
 ## Introduction
 
 For us, a movie can be an incredible experience. Watching everything happen on the big screen with all kinds of sound effects and beautiful dialog.
@@ -19,6 +28,8 @@ In this ReadMe file, you will find:
 * Sources used
 
 When reading, I will talk about a first and second *fragment* of the video. What I mean with this is that there are two main scenes. The first one is from the beginning untill the end of the first interrogation. The second fragment is the second interrogation until the end of the video.
+
+Run the video by placing the html file in your browser. For the best experience, I recommend watching the video first withour any sound. After that rewacth the entire video with the sound on.
 
 ---
 
@@ -160,6 +171,34 @@ As always, if I was given more time I could have done more. For example:
 
 * Furthermore is an animation I wanted to add in the beginning of the video, when we are flying through the city for a bit. I was thinking about a little tilt of the screen, or an fully illustrated cockpit as if we are in a flying car flying through the city. That is a little over the top, but still cool if I could make that.
 
+---
+
 ## Sources used
 
+### **Some websites used for information about coding**
 
+*Animate.css* | *A cross-browser library of CSS animations*. (z.d.). Geraadpleegd op 26 oktober 2022, van <https://animate.style/>
+
+*animation-duration - CSS: Cascading Style Sheets* | MDN. (2022, 27 september). <https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration?retiredLocale=nl>
+
+*Beautiful CSS box-shadow examples - CSS Scan*. (z.d.). Geraadpleegd op 26 oktober 2022, van <https://getcssscan.com/css-box-shadow-examples>
+
+Cope, S. (2022, 22 september). *box-shadow*. CSS-Tricks. <https://css-tricks.com/almanac/properties/b/box-shadow/>
+
+Coyier, C. (2018, 26 april). *Radial Gradient Recipes*. CSS-Tricks. <https://css-tricks.com/radial-gradient-recipes/>
+
+Lavicka, M. (z.d.). *ColorSpace - 3 Color Gradient*. Mycolor.space. Geraadpleegd op 26 oktober 2022, van <https://mycolor.space/gradient3?ori=circle>
+
+Westfall, P. (2019, 6 juni). *The easy way to add animations to your website [Animate.css] - PageCloud Blog - Web Design & Small Business Tips for Your Website*. Pagecloud.com. <https://www.pagecloud.com/blog/css-animations>
+
+### **Sources for subtitles for deaf people**
+
+[Analysis of the movie *Blade Runner 2049*, PDF](Paradigm_AS+Vol+1.+No+1-06.pdf)
+
+Jacobs, E. (2022, 23 augustus). *SDH Subtitles: Guide to Subtitles for the Deaf and Hard of Hearing. Rev*. <https://www.rev.com/blog/subtitles-blog/sdh-subtitles-for-the-deaf-and-hard-of-hearing>
+
+*Subtitling for deaf and hard-of-hearing people*. (2014, 9 december). Media Translation and Accessibility in the EU. <https://mediatranslationandaccessibilityineu.wordpress.com/accessibility/>
+
+---
+
+Thanks for reading this readme

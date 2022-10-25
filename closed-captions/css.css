@@ -293,8 +293,8 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 
 /* ** 5e zin: fuck off skin job** */
 .p6 span {
-	font-family: "brenner bold italic";
-	font-style: light italic;
+	font-family: "brenner bold";
+	font-style: bold;
 	position: relative;
 	bottom: 30em;
 	left: -20em;
@@ -550,6 +550,14 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	background: black;
 }
 
+@keyframes warning22 {
+	0%		{background-color: black;}
+	100%	{background-color: darkred;}
+}
+.sound22 {
+	animation: none;
+	animation: warning22 3s;
+}
 /* **********************************************
 Basic layout.
 *********************************************  */
