@@ -96,8 +96,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	}
 	33% {
 	  background-color: rgb(255, 255, 255);
-	}
-	
+	}	
 }
 
 @keyframes pulse11 {
@@ -106,8 +105,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	}
 	33% {
 	  background-color: rgb(255, 255, 255);
-	}
-	
+	}	
 }
 
 @keyframes pulse12 {
@@ -167,16 +165,14 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	font-weight: bold;
 	color:#CD7E2E;
 	font-size: 1.5em;
-
-	
 }
+
 .voice2 {
 	font-family: "brenner sans";
 	font-style: italic;
 	color:#CD7E2E;
 	font-size: 1.8em;
-	
-    
+	 
 }
 
 /* Fuck off wordt rood */
@@ -197,13 +193,9 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 	font-family: "Brenner slab";	
 }
 
+
 /* **********************************************
-The first paragraph, with extended timing for 
-	all siblings. Basically what it does is that
-	it shows the text after a delay, which 
-	corresponds with the time that the word is
-	spoken.
-You probably want to change the styling.
+
 ********************************************** */
 
 /* **Eerste zin ** */
@@ -211,6 +203,7 @@ You probably want to change the styling.
 	opacity: 0;
 	font-family: "brenner slab";
 	font-weight: bold;
+	
 }
  .p0.on span {
 	opacity: 1;
@@ -303,9 +296,9 @@ You probably want to change the styling.
 	font-family: "brenner bold italic";
 	font-style: light italic;
 	position: relative;
-	bottom: 20em;
-	left: -15em;
-	font-size: 1.3em;
+	bottom: 30em;
+	left: -20em;
+	font-size: 1em;
 }
 
 .p6 span:nth-of-type(1) {
@@ -483,6 +476,13 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 }
 
+.sound21 {
+	animation: none;
+}
+.sound22 {
+	background-color: red;
+}
+
 /* ******************************************************************************************* */
 /* VANAF HIER HET TWEEDE FRAGMENT */
 
@@ -549,97 +549,6 @@ kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
 	animation: none;
 	background: black;
 }
-
-
-
-/* ***************************************** */
-/* @keyframes irri10 {
-	0%		{background: black;}
-	25%		{background: rgb(87, 87, 87);}
-	50%		{background: black;}
-	75%		{background: rgb(87, 87, 87);}
-	100%	{background: black;}
-}
-.sound10 {
-	animation-name: irri10;
-	animation-duration: 8.2s;
-}
-
-.sound10 #video-mask {
-	animation-name: schalen ;
-	animation-duration: 41.8s;
-}
-
-@keyframes irri11 {
-	0%		{background: black;}
-	16%		{background: rgb(131, 131, 131);}
-	32%		{background: black;}
-	48%		{background: rgb(131, 131, 131);}
-	64%		{background: black;}
-	80%		{background: rgb(131, 131, 131);}
-	100%	{background: black;}
-}
-
-.sound11 {
-	animation-name: irri11;
-	animation-duration: 8.2s;
-}
-
-@keyframes irri12 {
-	0%		{background: black;}
-	10%		{background: rgb(197, 197, 197);}
-	20%		{background: black;}
-	30%		{background: rgb(197, 197, 197);}
-	40%		{background: black;}
-	50%		{background: rgb(197, 197, 197);}
-	60%		{background: black;}
-	70%		{background: rgb(197, 197, 197);}
-	80%		{background: black;}
-	90%		{background: rgb(197, 197, 197);}
-	100%	{background: black;}
-}
-
-.sound12 {
-	animation-name: irri12;
-	animation-duration: 8.2s;
-}
-
-
-@keyframes irri13 {
-	0%		{background: black;}
-	5%		{background: rgb(197, 197, 197);}
-	10%		{background: black;}
-	15%		{background: rgb(197, 197, 197);}
-	20%		{background: black;}
-	25%		{background: rgb(197, 197, 197);}
-	30%		{background: black;}
-	35%		{background: rgb(197, 197, 197);}
-	40%		{background: black;}
-	45%		{background: rgb(197, 197, 197);}
-	50%		{background: black;}
-	55%		{background: rgb(197, 197, 197);}
-	60%		{background: black;}
-	65%		{background: rgb(197, 197, 197);}
-	70%		{background: black;}
-	75%		{background: rgb(197, 197, 197);}
-	80%		{background: black;}
-	85%		{background: rgb(197, 197, 197);}
-	90%		{background: black;}
-	95%		{background: rgb(197, 197, 197);}
-	100%	{background: black;}
-}
-
-.sound13 {
-	animation-name: irri13;
-	animation-duration: 8.2s;
-} */
-
-
-
-
-
-
-
 
 /* **********************************************
 Basic layout.
