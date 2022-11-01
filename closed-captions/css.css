@@ -194,9 +194,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 }
 
 
-/* **********************************************
-
-********************************************** */
+/* ******************************************** */
 
 /* **Eerste zin ** */
 .p0 span {
@@ -382,11 +380,7 @@ ALLE KEYFRAMES VOOR DE ANIMATIES HIER PLAATSEN
 Sounds.
 ********************************************  */
 
-/* Dit zorgt evoor dat bij de sirene op het begin de achtergrond 
-kleur veranderd. Natuurlijk kan hier meer mee gedaan worden */
-
 /* Met .sound kan je spelen om bij bepaalde geluiden iets te laten gebeuren */
-
 
 /* *SOUND OPTIONS VOOR ELKE GELUID MOGELIJK IN DE FILM* */
 

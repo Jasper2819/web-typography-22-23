@@ -12,8 +12,8 @@ Copying and sharing this document is not allowed. Contact the author if you want
 ## Introduction
 
 For us, a movie can be an incredible experience. Watching everything happen on the big screen with all kinds of sound effects and beautiful dialog.
-But for people who can't hear a thing, it can be really difficult to understand everything happening on
-the screen. There are solutions to this, like simple subtitles, but this can be very boring.
+But for people who can't hear a thing, it can be really difficult to understand everything happening on the screen. There are solutions to this, like simple subtitles, but this can be very boring. It is impotant to **prioritise this identity**.
+
 It is up to us students of the minor *Visual Interface Design* to put some extra magic to the simple subtitles.
 
 In this ReadMe file, you will find:
@@ -37,9 +37,9 @@ Run the video by placing the html file in your browser. For the best experience,
 
 At first I did some research to what is needed for deaf people to get the right feeling from a movie. I searched some documents conserning the rules and guidelines used for this kind of things. In order to make something unique, I wanted to do something that has not been done before. So looking at the guidelines, I could get an image of what to "ignore", deviate from what is convenient.
 
-### Basic rules
+### Basic rules *(and ignore conventions)*
 
-Searching on the internet I found several [rules and guidelines](https://www.rev.com/blog/subtitles-blog/sdh-subtitles-for-the-deaf-and-hard-of-hearing) for subtitles for movies. Most of the rules are about the timing. When does a subtitle appear, when does is dissapear, how is it places on the screen? Most of these rules makes subtitles not that interesting. For this project, it is important to kind of ignore those rules and do something completly different *(ignore conventions)*.
+Searching on the internet I found several [rules and guidelines](https://www.rev.com/blog/subtitles-blog/sdh-subtitles-for-the-deaf-and-hard-of-hearing) for subtitles for movies. Most of the rules are about the timing. When does a subtitle appear, when does is dissapear, how is it places on the screen? Most of these rules makes subtitles not that interesting. For this project, it is important to kind of ignore those rules and do something completly different.
 
 What is being subtitled? Next to the voices of the actors, a lot of special effects are being subtitled as well. Think about and extremely huge explosion, underwater bubbles or anything relevant to know what is going on. But sounds not only make a movie spectaculair, they can also have the opposite effect. With sounds you can make a scene interesting, scary or you can build up a lot of tension. And that last one is compelling. Because in the first fragment of the video I'm working on, a high piched tone can be heard. This tone gets worse and worse when more questions follow and than suddenly... it stops. So it is important to give the same fealing to deaf people, to let them know that there is something irritating going on. For this, a simple subtitle won't be enough.
 
@@ -89,6 +89,10 @@ This is a color I only use one time in the entire video, but still worth to ment
 In the second fragment of the video, *agent K* is being questioned again. His boss asks "what's it like... ...someone you love?". The last word is being said with some sarcasm or disgust. In the chapter **Nuances** I will explain my choices with some words more, but to make it clear that the word *love* is being said with some emotion, I used a pink color on the background. I associated pink with love, and I think the deaf person will understand too.
 
 I rather not use white, or blue and red, because I already showed to a deaf person that those colors are being linked to when an alarm can be heard. So it can be confusing if I used white or any other color when he says the word *love*.
+
+### Add nonsense
+
+The things above will add a lot of nonsense to the subtitles and how you experience the video. And that is exactly what I want to achieve. Not doing what is common, but doing something that is unique to create a special experience for a deaf or hard-of-hareing person who is watching this movie.
 
 ---
 
